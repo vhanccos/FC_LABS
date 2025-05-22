@@ -45,6 +45,9 @@ while t < t_final:
     r1 = np.sqrt(dx1**2 + dy1**2)
     r2 = np.sqrt(dx2**2 + dy2**2)
 
+    if r1 <= r or r2 <= r:
+        break
+
     zeta1 = np.arctan2(dy1, dx1)
     zeta2 = np.arctan2(dy2, dx2)
 
